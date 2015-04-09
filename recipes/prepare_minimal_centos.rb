@@ -74,7 +74,7 @@ remote_file "vmlinuz" do
 end
 
 template "#{node['http-chef-pxe']['image_ks_dir']}/#{node['http-chef-pxe']['ks_filename']}" do 
-  source "ks/Centos6-5.minimal.ks"
+  source "ks/Centos6-6.minimal.ks"
 
   variables(
     'hostname' => node['pxe']['hostname'],
